@@ -31,3 +31,4 @@
 /Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Api/obj/Debug/net7.0/TodoListApp.Api.pdb
 /Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Api/obj/Debug/net7.0/TodoListApp.Api.genruntimeconfig.cache
 /Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Api/obj/Debug/net7.0/ref/TodoListApp.Api.dll
+/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Api/obj/Debug/net7.0/TodoListApp.Api.sourcelink.json

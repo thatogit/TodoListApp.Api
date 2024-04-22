@@ -115,3 +115,4 @@
 /Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Tests/obj/Debug/net7.0/TodoListApp.Tests.pdb
 /Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Tests/obj/Debug/net7.0/TodoListApp.Tests.genruntimeconfig.cache
 /Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Tests/obj/Debug/net7.0/ref/TodoListApp.Tests.dll
+/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Tests/obj/Debug/net7.0/TodoListApp.Tests.sourcelink.json

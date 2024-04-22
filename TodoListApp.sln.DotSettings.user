@@ -2,5 +2,8 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e6f0f92c_002D1f04_002D47f4_002Db77d_002De279ea671a52/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Get_OnSuccess_ReturnStatusCode200" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
   &lt;TestAncestor&gt;
     &lt;TestId&gt;xUnit::56F060A2-B403-4F17-A5FD-CA6A0AF076AA::net7.0::TodoListApp.Tests.Systems.Controllers.TodoTaskControllerTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::56F060A2-B403-4F17-A5FD-CA6A0AF076AA::net7.0::TodoListApp.Tests.Systems.Services.TestTaskItemService.GetAllTaskItems_OnInvoked_HttpGet&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::56F060A2-B403-4F17-A5FD-CA6A0AF076AA::net7.0::TodoListApp.Tests.Systems.Services.TestTaskItemService.GetAllTaskItems_OnInvoked_HttpListOfFans&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::56F060A2-B403-4F17-A5FD-CA6A0AF076AA::net7.0::TodoListApp.Tests.Systems.Services.TestTaskItemService.GetAllTaskItems_OnInvoked_ReturnEmptyList&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

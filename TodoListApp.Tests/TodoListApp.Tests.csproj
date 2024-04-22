@@ -25,12 +25,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Fixtures\" />
-      <Folder Include="Helpers\" />
-      <Folder Include="Systems\Services\" />
-    </ItemGroup>
-
-    <ItemGroup>
       <ProjectReference Include="..\TodoListApp.Api\TodoListApp.Api.csproj" />
     </ItemGroup>
 

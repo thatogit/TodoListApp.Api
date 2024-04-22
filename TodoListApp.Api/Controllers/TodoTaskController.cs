@@ -4,8 +4,8 @@ using TodoListApp.Api.Services.Interface;
 namespace TodoListApp.Api.Controllers;
 
 [ApiController]
-[Route("[controller]")]
-public class TodoTaskController:ControllerBase
+[Route("api/[controller]")]
+public class TodoTaskController:Controller
 {
     private readonly ITaskService _taskService;
     public TodoTaskController(ITaskService taskService)
@@ -20,6 +20,6 @@ public class TodoTaskController:ControllerBase
         if (tasks.Any())
             return Ok(tasks);
 
-        return NotFound();
+        return NotFound();  
     }
 }

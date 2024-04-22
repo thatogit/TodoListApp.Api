@@ -2,7 +2,9 @@ using FluentAssertions;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using TodoListApp.Api.Controllers;
+using TodoListApp.Api.Models;
 using TodoListApp.Api.Services.Interface;
+using TodoListApp.Tests.Fixtures;
 
 namespace TodoListApp.Tests.Systems.Controllers;
 
@@ -13,7 +15,8 @@ public class TodoTaskControllerTest
     {
         //Arrange
         var mockTaskService = new Mock<ITaskService>();
-        mockTaskService.Setup(service => service.GetAllTasks()).ReturnsAsync(new List<Task>());
+        mockTaskService.Setup(service => service.GetAllTasks())
+            .ReturnsAsync(TaskItemFixture.GetTaskItem());
         var todoController = new TodoTaskController(mockTaskService.Object);
         //Act
         var result = (OkObjectResult)await todoController.Get();
@@ -27,7 +30,8 @@ public class TodoTaskControllerTest
     {
         //Arrange
         var mockTaskService = new Mock<ITaskService>();
-        mockTaskService.Setup(service => service.GetAllTasks()).ReturnsAsync(new List<Task>());
+        mockTaskService.Setup(service => service.GetAllTasks())
+            .ReturnsAsync(TaskItemFixture.GetTaskItem());
         var todoController = new TodoTaskController(mockTaskService.Object);
         //Act
         var result = (OkObjectResult)await todoController.Get();
@@ -41,7 +45,8 @@ public class TodoTaskControllerTest
     {
         //Arrange
         var mockTaskService = new Mock<ITaskService>();
-        mockTaskService.Setup(service => service.GetAllTasks()).ReturnsAsync(new List<Task>());
+        mockTaskService.Setup(service => service.GetAllTasks())
+            .ReturnsAsync(TaskItemFixture.GetTaskItem());
         
         var todoController = new TodoTaskController(mockTaskService.Object);
         //Act
@@ -50,7 +55,7 @@ public class TodoTaskControllerTest
         //Assert
         result.Should().BeOfType<OkObjectResult>();
 
-        result.Value.Should().BeOfType<List<Task>>();
+        result.Value.Should().BeOfType<List<TaskItem>>();
     }
     
     [Fact]
@@ -58,7 +63,8 @@ public class TodoTaskControllerTest
     {
         //Arrange
         var mockTaskService = new Mock<ITaskService>();
-        mockTaskService.Setup(service => service.GetAllTasks()).ReturnsAsync(new List<Task>());
+        mockTaskService.Setup(service => service.GetAllTasks())
+            .ReturnsAsync(new List<TaskItem>());
         
         var todoController = new TodoTaskController(mockTaskService.Object);
         //Act
