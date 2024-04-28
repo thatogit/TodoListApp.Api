@@ -9,12 +9,12 @@ namespace TodoListApp.Api.Services;
 public class TaskItemRepository :ITaskRepository
 {
     private readonly TodoDataContext _db;
-    private readonly IMapper _mapper;
+   // private readonly IMapper _mapper;
 
-    public TaskItemRepository(TodoDataContext todoDataContext, IMapper mapper)
+    public TaskItemRepository(TodoDataContext todoDataContext)//, IMapper mapper)
     {
         _db = todoDataContext;
-        _mapper = mapper;
+      //  _mapper = mapper;
     }
     
     public async Task<TaskItemDto> AddTask(TaskItemDto taskItemDto)
