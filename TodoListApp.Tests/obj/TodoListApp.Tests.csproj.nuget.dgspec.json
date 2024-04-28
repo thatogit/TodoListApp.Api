@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Tests/TodoListApp.Tests.csproj": {}
+    "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Tests\\TodoListApp.Tests.csproj": {}
   },
   "projects": {
-    "/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Api/TodoListApp.Api.csproj": {
+    "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Api\\TodoListApp.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Api/TodoListApp.Api.csproj",
+        "projectUniqueName": "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Api\\TodoListApp.Api.csproj",
         "projectName": "TodoListApp.Api",
-        "projectPath": "/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Api/TodoListApp.Api.csproj",
-        "packagesPath": "/Users/thato/.nuget/packages/",
-        "outputPath": "/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Api/obj/",
+        "projectPath": "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Api\\TodoListApp.Api.csproj",
+        "packagesPath": "C:\\Users\\thato.madubanya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/thato/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\thato.madubanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -49,6 +56,24 @@
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.18, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -74,34 +99,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Tests/TodoListApp.Tests.csproj": {
+    "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Tests\\TodoListApp.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Tests/TodoListApp.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Tests\\TodoListApp.Tests.csproj",
         "projectName": "TodoListApp.Tests",
-        "projectPath": "/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Tests/TodoListApp.Tests.csproj",
-        "packagesPath": "/Users/thato/.nuget/packages/",
-        "outputPath": "/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Tests/obj/",
+        "projectPath": "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Tests\\TodoListApp.Tests.csproj",
+        "packagesPath": "C:\\Users\\thato.madubanya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/thato/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\thato.madubanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Api/TodoListApp.Api.csproj": {
-                "projectPath": "/Users/thato/Downloads/Dev/Project/TodoListApp/TodoListApp.Api/TodoListApp.Api.csproj"
+              "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Api\\TodoListApp.Api.csproj": {
+                "projectPath": "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Api\\TodoListApp.Api.csproj"
               }
             }
           }
@@ -110,6 +137,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -161,7 +193,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.101/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
         }
       }
     }

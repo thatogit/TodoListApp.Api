@@ -10,16 +10,6 @@ public class TodoDataContext : DbContext
     {
         
     }
-    
     public DbSet<TaskItem> TaskItem { get; set; }
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
-        modelBuilder.Entity<TaskItem>()
-            .HasIndex(p => p.Id)
-            .IsUnique();
-        modelBuilder.Entity<TaskItem>()
-            .HasIndex(p => p.Name);
-    }
     
 }
