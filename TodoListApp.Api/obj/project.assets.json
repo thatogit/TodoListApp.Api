@@ -3746,26 +3746,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\thato.madubanya\\.nuget\\packages\\": {}
+    "/Users/thato/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Api\\TodoListApp.Api.csproj",
+      "projectUniqueName": "/Users/thato/Downloads/Dev/Project/TodoListApp.Api/TodoListApp.Api/TodoListApp.Api.csproj",
       "projectName": "TodoListApp.Api",
-      "projectPath": "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Api\\TodoListApp.Api.csproj",
-      "packagesPath": "C:\\Users\\thato.madubanya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\thato.madubanya\\OneDrive - Investec\\TodoApp\\TodoListApp.Api\\TodoListApp.Api\\obj\\",
+      "projectPath": "/Users/thato/Downloads/Dev/Project/TodoListApp.Api/TodoListApp.Api/TodoListApp.Api.csproj",
+      "packagesPath": "/Users/thato/.nuget/packages/",
+      "outputPath": "/Users/thato/Downloads/Dev/Project/TodoListApp.Api/TodoListApp.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\thato.madubanya\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/thato/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/sdk/7.0.312/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3778,11 +3777,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3843,7 +3837,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.312/RuntimeIdentifierGraph.json"
       }
     }
   }
