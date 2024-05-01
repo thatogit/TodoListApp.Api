@@ -6,8 +6,8 @@ namespace TodoListApp.Api.Services.Interface;
 
 public interface ITaskRepository
 {
-    Task<TaskItem> AddTask(TaskItemDto taskItemDto);
-    Task<TaskItem> UpdateTask(int id,[FromBody] TaskItemDto taskItemUpdate);
-    Task DeleteTask(int id);  
+    Task<TaskItemDto> AddTask(TaskItemDto task);
+    Task<int> UpdateTask([FromBody] TaskItemDto taskItemUpdate);
+    Task<int> DeleteTask(int id);  
     Task<List<TaskItem>> GetTaskItems(); 
 }

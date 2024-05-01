@@ -1,9 +1,7 @@
-using System.Net;
-using AutoMapper;
-using Azure;
-using Microsoft.AspNetCore.Components.Routing;
+using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using TodoListApp.Api.Data;
 using TodoListApp.Api.Models;
 using TodoListApp.Api.Models.TodoDtos;
@@ -19,63 +17,68 @@ public class TaskItemRepository : ITaskRepository
     {
         _db = todoDataContext;
     }
-    
-    public async Task<TaskItem> AddTask(TaskItemDto taskItem)
-    {
 
+    public async Task<List<TaskItem>> GetTaskItems()
+    {
+        IEnumerable<TaskItem> taskItems = await _db.TaskItem.Where(p => p.Id > 0).ToListAsync();
+
+        return taskItems.ToList();
+    }
+    public async Task<TaskItemDto> AddTask(TaskItemDto task)
+    {
         TaskItem newTaskItem = new TaskItem
         {
-             Name = taskItem.Name
+             Name = task.Name
 
         };
         
-       await _db.AddAsync(newTaskItem);
+        await _db.AddAsync(newTaskItem);
         
         await _db.SaveChangesAsync();
 
-        return newTaskItem;
+        return task;
     }
 
-    public async Task DeleteTask(int id)
+    public async Task<int> UpdateTask([FromBody] TaskItemDto taskItemUpdate)
     {
+        var taskExist = await _db.TaskItem.FirstOrDefaultAsync(c => c.Id == taskItemUpdate.Id);
 
-        TaskItem taskToDelete = await _db.TaskItem.FirstOrDefaultAsync(p => p.Id == id);
+            if (taskItemUpdate == null || taskExist == null)
+                return -1;
 
-        if (taskToDelete != null)
+        if (taskExist != null)
         {
-            _db.TaskItem.Remove(taskToDelete);
-            _db.SaveChanges(); 
-            
-        }
-
-    }
-
-    public async  Task<List<TaskItem>> GetTaskItems()
-    {
-        IEnumerable<TaskItem> taskItems = await _db.TaskItem.Where(p=>p.Id>0).ToListAsync();
-
-        return  taskItems.ToList();
-    }
-
-    public async Task<TaskItem> UpdateTask(int id, [FromBody] TaskItemDto taskItemUpdate)
-    {
-        var taskExist = await _db.TaskItem.FirstOrDefaultAsync(c => c.Id == id);
-
-        TaskItem taskItem = null;
-
-        if ( taskExist.Id != null )
-        {
-            taskItem = new TaskItem
+            TaskItem taskItem = new TaskItem
             {
                 Name = taskItemUpdate.Name
             };
 
             _db.Update(taskItem);
-
             await _db.SaveChangesAsync();
-            
+
         }
 
-        return taskItem;
+            return 1;
+  
+        
     }
+
+    public async Task<int> DeleteTask(int id)
+    {
+        TaskItem taskToDelete = await _db.TaskItem.FirstOrDefaultAsync(p => p.Id == id);
+
+        if (taskToDelete == null)
+        {
+            return -1;
+
+        }
+
+        _db.TaskItem.Remove(taskToDelete);
+        _db.SaveChanges();
+
+        return 1;
+
+
+    }
+
 }

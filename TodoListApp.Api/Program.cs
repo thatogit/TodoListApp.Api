@@ -1,5 +1,5 @@
+
 using Microsoft.EntityFrameworkCore;
-using System;
 using TodoListApp.Api.Configuration;
 using TodoListApp.Api.Data;
 using TodoListApp.Api.Models;
@@ -55,20 +55,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
-app.MapGet("/TaskItem", (TodoDataContext context) =>
-{
-    return context.TaskItem.ToList();
-})
-.WithName("GetTaskItems")
-.WithOpenApi();
-
-app.MapPost("/TaskItem", (TaskItem taskItem, TodoDataContext context) =>
-{
-    context.Add(taskItem);
-    context.SaveChanges();
-})
-.WithName("CreateTaskItem")
-.WithOpenApi();
 
 app.Run();
